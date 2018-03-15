@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic);
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+
+.big {
+	font-size: 1.4em;
+}

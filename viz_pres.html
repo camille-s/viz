@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Communicating with data visualization</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Camille Seaberry, DataHaven" />
+    <meta name="date" content="2018-03-15" />
+    <link href="viz_pres_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="viz_pres_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="metropolis.css" type="text/css" />
+    <link rel="stylesheet" href="extras.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Communicating with data visualization
+### Camille Seaberry, DataHaven
+### March 15, 2018
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Goal of this workshop
+
+.font110[Data visualization is way too big a field to cover in one morning! But these are some starting places for improving your use of data visualization.
+
+I'm not a data viz genius, so probably any of the charts I've made here could be improved upon.]
+
+---
+
+# What is data visualization?
+
+.font110[
+&gt; *The representation and presentation of data to facilitate understanding*
+&gt;
+&gt; -- Andy Kirk, "Data Visualisation: A Handbook for Data Driven Design"
+
+&gt; *Data graphics visually display measured quantities by means of the combined use of points, lines, a coordinate system, numbers, symbols, words, shading, and color*
+&gt;
+&gt; -- Edward Tufte, godfather of data visualization, "The Visual Display of Quantitative Information"
+]
+
+---
+
+# Maybe you don't need a visualization
+
+
+
+
+.pull-left[
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-11-1.png" width="576" /&gt;
+
+]
+
+.pull-right[
+Chart serves *some* purpose, but you might be better off with just text:
+
+
+
+
+* Working men's median income is $51,367, compared to women's median income of $35,681
+* On average, working men out-earn working women by $15,686 each year
+* On average, women earn 69 cents on the male dollar
+
+]
+
+---
+
+# Maybe you don't need a visualization
+
+.pull-left[
+* A few overview stats---especially if comparisons wouldn't be appropriate
+
+![from https://ct-data-haven.github.io/nhv2016/](nhv_profile_table.png)
+]
+
+.pull-right[
+* Bullet points
+
+![from Community Progress Report 2016](cwi_bullets.png)
+]
+
+---
+
+# Questions to ask yourself
+
+.font120[
+If you *do* need a visualization, be intentional about what you create
+
+What's your purpose?
+
+* Comparing two or more observations
+* Comparing values changing over time
+* Showing parts of a whole
+* Finding relationships between values
+* Placing numbers on a map
+* Distributions of values
+  ]
+  
+---
+  
+# Purpose
+
+## Comparing observations
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-13-1.png" width="672" /&gt;
+
+---
+
+# Purpose
+
+## Parts of a whole
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-14-1.png" width="672" /&gt;
+
+---
+
+# Questions to ask yourself
+
+.font120[
+* Who's your audience?
+  + Make charts for yourself to understand your data as well
+* What's the purpose?
+* What do you need to communicate? What's the takeaway?
+* What can you do without?
+]
+
+---
+
+# Focusing on your audience
+
+Example: boxplots
+
+Statisticians: 😍. General audience: 🤔
+
+
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-16-1.png" width="672" /&gt;
+
+---
+
+# Focusing on your audience
+
+General audiences often more concerned with averages or summary figures, not distributions.
+
+Or pair a simple chart with more detailed text like "Low-income rates vary greatly throughout Greater New Haven's census tracts, with rates in some tracts in the single digits, while many city tracts have rates over 50%."
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-17-1.png" width="672" /&gt;
+
+
+
+---
+
+# What's the purpose?
+
+Hard to read, and unclear what the purpose is
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-19-1.png" width="672" /&gt;
+
+---
+
+# What's the purpose?
+
+Purpose: show differences in income between towns
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-20-1.png" width="672" /&gt;
+
+---
+
+# What's the purpose?
+
+Purpose: to show income by gender in each town
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-21-1.png" width="672" /&gt;
+
+Alternatively, could order by largest pay gap
+
+---
+
+# Basic guidelines
+
+.font120[
+* Figure out what you're trying to show, and why
+* Use an appropriate chart/visualization type
+* Map ink to values
+* Get rid of junk and distractions
+]
+
+---
+
+# Basic guidelines
+
+&lt;img src="Which-Chart-Should-I-Use.jpg" width="2250" height="60%" /&gt;
+
+Curtis Newbold, [The Visual Communication Guy](http://thevisualcommunicationguy.com/2017/06/05/which-chart-should-i-use/)
+
+---
+
+# Basic guidelines
+
+More detailed guide to picking charts: http://annkemery.com/wp-content/uploads/2017/10/AnnKEmery-FSI-Visualization-Handout.pdf
+
+---
+
+# Bad habits
+
+.font120[
+* Muddying your data
+* Telling inaccurate stories
+* Visual cues that are flashy but contribute nothing/interfere with understanding (see any cable news channel)
+* Unexamined use of pie chart, 3D, shadows, etc
+* Encoding information that isn't actually there---e.g. do you actually need all those colors?
+* Comparing things that are not actually comparable
+]
+
+---
+
+# Bad habits
+
+## Data mud
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-23-1.png" width="672" /&gt;
+
+---
+
+# Bad habits
+
+## Fox News-ing your data
+
+![fox news](Fox-News-bar-chart-1.jpeg)
+
+---
+
+# Bad habits
+
+## 3D
+
+If you aren't solving differential equations or plotting terrain, you probably don't need 3 dimensions.
+
+Where should you be reading values?
+
+&lt;img src="3d_bars.png" width="480" height="70%" /&gt;
+
+
+---
+
+# Bad habits
+
+## Pie charts
+
+Google "pie charts are evil." There's almost always a better way.
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-25-1.png" width="960" /&gt;
+
+---
+
+# Bad habits
+
+## Pie charts
+
+Stacked bars are easier to compare between observations
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-26-1.png" width="672" /&gt;
+
+---
+
+# Bad habits
+
+## Visualizing information that isn't actually there
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-27-1.png" width="672" /&gt;
+
+
+---
+
+# Few notes on visual perception
+
+.font120[
+Visual perception is a huge field of psychological study. A few basic ideas:
+
+* It might be hard to show minute differences---but it also might not be necessary
+* Ink to value---e.g. scale bubbles to area, not diameter
+* Colors convey meaning
+  + Cultural significance, emotion, politics
+  + Color scales might imply direction
+]
+
+---
+
+# Few notes on visual perception
+
+Can you spot difference between tract with 20% rate and 25% rate? Is it really necessary?
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-28-1.png" width="768" /&gt;
+
+How would you compare poverty rates between non-adjacent parts of the region?
+
+---
+
+# Few notes on visual perception
+
+Putting values into buckets makes it easier to spot patterns &amp; differences---might sacrifice detail but gain clarity
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-29-1.png" width="672" /&gt;
+
+Now how easy is it to compare different areas?
+
+---
+
+# Few notes on visual perception
+
+What do these colors signify?
+
+
+```
+## 
+  |                                                                       
+  |                                                                 |   0%
+  |                                                                       
+  |====                                                             |   6%
+  |                                                                       
+  |======                                                           |  10%
+  |                                                                       
+  |==========                                                       |  15%
+  |                                                                       
+  |=============                                                    |  20%
+  |                                                                       
+  |================                                                 |  25%
+  |                                                                       
+  |===================                                              |  30%
+  |                                                                       
+  |=======================                                          |  35%
+  |                                                                       
+  |==========================                                       |  40%
+  |                                                                       
+  |==============================                                   |  45%
+  |                                                                       
+  |================================                                 |  50%
+  |                                                                       
+  |====================================                             |  56%
+  |                                                                       
+  |=======================================                          |  60%
+  |                                                                       
+  |===========================================                      |  66%
+  |                                                                       
+  |=============================================                    |  70%
+  |                                                                       
+  |=================================================                |  76%
+  |                                                                       
+  |====================================================             |  80%
+  |                                                                       
+  |========================================================         |  86%
+  |                                                                       
+  |==========================================================       |  90%
+  |                                                                       
+  |==============================================================   |  96%
+  |                                                                       
+  |=================================================================| 100%
+```
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-31-1.png" width="672" /&gt;
+
+---
+
+# Few notes on visual perception
+
+Do these colors tell the story of *change* more accurately? What meaning do we give to these colors?
+
+Red = positive values, but negative outcome (e.g. increase in low-income rate)
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-32-1.png" width="672" /&gt;
+
+---
+
+# Activities!
+
+## Find what doesn't work
+
+.font130[
+In groups, visit WTF Viz [viz.wtf](http://viz.wtf/). Find your group's favorite example of what not to do, and discuss:
+
+* What went wrong?
+* What is the visualization's purpose? Or is the purpose not even clear?
+* How could you achieve this purpose differently?
+]
+
+---
+
+# Activities!
+
+## Improve a visualization
+
+.font130[
+Use the Data Visualization checklist to rate either a chart you or a colleague has made recently, or the chart on the next slide
+
+Checklist: [bit.ly/vizcheck](http://bit.ly/vizcheck)
+]
+
+---
+
+# Improve this visualization
+
+
+
+
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-35-1.png" width="768" /&gt;
+
+---
+
+## Some improvements
+
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-36-1.png" width="672" /&gt;
+
+
+---
+
+# Resources
+
+* [Data + Design free open source book](https://infoactive.co/data-design)
+* [Storytelling with Data blog, book, and podcast](http://www.storytellingwithdata.com/) - Cole Nussbaumer Knaflic
+* [Data Stories podcast](http://datastori.es/)
+* [FlowingData](http://flowingdata.com/) - Nathan Yau
+  + Includes tutorials!
+  + [How to Spot Visualization Lies](https://flowingdata.com/2017/02/09/how-to-spot-visualization-lies/)
+* [Policy Viz blog &amp; podcast](https://policyviz.com/)
+  + Includes lots of remakes of bad charts
+* [Junk Charts blog](http://junkcharts.typepad.com/) - Kaiser Fung
+* [Pew Research Center Fact Tank blog](http://www.pewresearch.org/fact-tank/)
+* [Catherine D'Ignazio](http://www.kanarinka.com/)
+  + [What would feminist data visualization look like?](https://medium.com/@kanarinka/what-would-feminist-data-visualization-look-like-aa3f8fc7f96c)
+
+---
+
+# Tools
+
+* [Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
+* [Data Viz Project - catalog](http://datavizproject.com/)
+* [Visualising Data blog &amp; book](http://www.visualisingdata.com/resources/) - Andy Kirk
+  + Includes huge section of tools
+* [Interactive Data Visualization Checklist](https://datavizchecklist.stephanieevergreen.com/rate)
+  + [pdf version](http://stephanieevergreen.com/updated-data-visualization-checklist/)
+* [Makeover Monday community](http://www.makeovermonday.co.uk/)
+  + Mostly Tableau-focused
+---
+
+# Stuff I've made
+
+.big[
+	[DataHaven B-sides blog: ct-data-haven.github.io](https://ct-data-haven.github.io/)
+]
+
+The code that generated these slides is on GitHub:
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
