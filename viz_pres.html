@@ -6,8 +6,8 @@
     <meta name="author" content="Camille Seaberry, DataHaven" />
     <meta name="date" content="2018-03-15" />
     <link href="viz_pres_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="viz_pres_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
     <link href="viz_pres_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" href="metropolis.css" type="text/css" />
     <link rel="stylesheet" href="extras.css" type="text/css" />
   </head>
   <body>
@@ -56,12 +56,12 @@ I'm not a data viz genius, so probably any of the charts I've made here could be
 
 .font110[
 &gt; *The representation and presentation of data to facilitate understanding*
-&gt;
-&gt; -- Andy Kirk, "Data Visualisation: A Handbook for Data Driven Design"
+
+ -- Andy Kirk, "Data Visualisation: A Handbook for Data Driven Design"
 
 &gt; *Data graphics visually display measured quantities by means of the combined use of points, lines, a coordinate system, numbers, symbols, words, shading, and color*
-&gt;
-&gt; -- Edward Tufte, godfather of data visualization, "The Visual Display of Quantitative Information"
+
+ -- Edward Tufte, godfather of data visualization, "The Visual Display of Quantitative Information"
 ]
 
 ---
@@ -216,11 +216,11 @@ Alternatively, could order by largest pay gap
 
 &lt;img src="Which-Chart-Should-I-Use.jpg" width="2250" height="60%" /&gt;
 
-Curtis Newbold, [The Visual Communication Guy](http://thevisualcommunicationguy.com/2017/06/05/which-chart-should-i-use/)
-
 ---
 
 # Basic guidelines
+
+Previous guide: Curtis Newbold, [The Visual Communication Guy](http://thevisualcommunicationguy.com/2017/06/05/which-chart-should-i-use/)
 
 More detailed guide to picking charts: http://annkemery.com/wp-content/uploads/2017/10/AnnKEmery-FSI-Visualization-Handout.pdf
 
@@ -274,7 +274,10 @@ Where should you be reading values?
 
 Google "pie charts are evil." There's almost always a better way.
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-25-1.png" width="960" /&gt;
+
+
+&lt;img src="pies.png" width="1050" height="40%" /&gt;
+
 
 ---
 
@@ -284,7 +287,7 @@ Google "pie charts are evil." There's almost always a better way.
 
 Stacked bars are easier to compare between observations
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-26-1.png" width="672" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-27-1.png" width="672" /&gt;
 
 ---
 
@@ -292,7 +295,7 @@ Stacked bars are easier to compare between observations
 
 ## Visualizing information that isn't actually there
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-27-1.png" width="672" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-28-1.png" width="672" /&gt;
 
 
 ---
@@ -315,7 +318,7 @@ Visual perception is a huge field of psychological study. A few basic ideas:
 
 Can you spot difference between tract with 20% rate and 25% rate? Is it really necessary?
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-28-1.png" width="768" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-29-1.png" width="768" /&gt;
 
 How would you compare poverty rates between non-adjacent parts of the region?
 
@@ -325,7 +328,7 @@ How would you compare poverty rates between non-adjacent parts of the region?
 
 Putting values into buckets makes it easier to spot patterns &amp; differences---might sacrifice detail but gain clarity
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-29-1.png" width="672" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-30-1.png" width="768" /&gt;
 
 Now how easy is it to compare different areas?
 
@@ -336,53 +339,8 @@ Now how easy is it to compare different areas?
 What do these colors signify?
 
 
-```
-## 
-  |                                                                       
-  |                                                                 |   0%
-  |                                                                       
-  |====                                                             |   6%
-  |                                                                       
-  |======                                                           |  10%
-  |                                                                       
-  |==========                                                       |  15%
-  |                                                                       
-  |=============                                                    |  20%
-  |                                                                       
-  |================                                                 |  25%
-  |                                                                       
-  |===================                                              |  30%
-  |                                                                       
-  |=======================                                          |  35%
-  |                                                                       
-  |==========================                                       |  40%
-  |                                                                       
-  |==============================                                   |  45%
-  |                                                                       
-  |================================                                 |  50%
-  |                                                                       
-  |====================================                             |  56%
-  |                                                                       
-  |=======================================                          |  60%
-  |                                                                       
-  |===========================================                      |  66%
-  |                                                                       
-  |=============================================                    |  70%
-  |                                                                       
-  |=================================================                |  76%
-  |                                                                       
-  |====================================================             |  80%
-  |                                                                       
-  |========================================================         |  86%
-  |                                                                       
-  |==========================================================       |  90%
-  |                                                                       
-  |==============================================================   |  96%
-  |                                                                       
-  |=================================================================| 100%
-```
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-31-1.png" width="672" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-32-1.png" width="768" /&gt;
 
 ---
 
@@ -392,7 +350,7 @@ Do these colors tell the story of *change* more accurately? What meaning do we g
 
 Red = positive values, but negative outcome (e.g. increase in low-income rate)
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-32-1.png" width="672" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-33-1.png" width="768" /&gt;
 
 ---
 
@@ -428,13 +386,13 @@ Checklist: [bit.ly/vizcheck](http://bit.ly/vizcheck)
 
 
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-35-1.png" width="768" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-36-1.png" width="768" /&gt;
 
 ---
 
-## Some improvements
+# Some improvements
 
-&lt;img src="viz_pres_files/figure-html/unnamed-chunk-36-1.png" width="672" /&gt;
+&lt;img src="viz_pres_files/figure-html/unnamed-chunk-37-1.png" width="768" /&gt;
 
 
 ---
